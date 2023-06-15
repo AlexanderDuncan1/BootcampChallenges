@@ -1,9 +1,10 @@
 # Week 3 Challenge - Password Generator.
 
-## Github Link.
+## Github Link 
+https://github.com/AlexanderDuncan1/BootcampChallenges
 
 ## Site Link.
-
+https://alexanderduncan1.github.io/BootcampChallenges/
 
 
 ## Authors notes.
