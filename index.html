@@ -1,49 +1,35 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Biography</title>
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-</head>
-<body>
-  <header>
-    <h1>Alexander Duncan</h1>
-    <nav>
-      <a href="#biography">Biography</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section id="biography" class="box biography">
-      <h2 class="about-me-title">About Alex!</h2>
-      <div class="biography-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut mauris a arcu aliquam ultrices eu nec eros. Mauris faucibus elit id justo accumsan, et lacinia mi lobortis.</p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+          <button id="copy" class="btn2">Copy Password</button>
+        </div>
       </div>
-      <div class="profile-box">
-        <div class="profile-picture"></div>
-      </div>
-    </section>
-
-    <section id="portfolio" class="box portfolio">
-      <h2>Portfolio</h2>
-      <ul>
-        <li><a href="####">Project 1</a></li>
-        <li><a href="####">Project 2</a></li>
-        <li><a href="####">Project 3</a></li>
-      </ul>
-    </section>
-
-    <section id="contact" class="box contact">
-      <h2>Contact</h2>
-      <ul>
-        <li><a href="####">mr.alexanderduncan@gmail.com</a></li>
-        <li><a href="####">GitHub</a></li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-  </footer>
-</body>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
