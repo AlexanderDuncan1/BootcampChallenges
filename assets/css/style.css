@@ -1,140 +1,85 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html,
-body,
-.wrapper {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: sans-serif;
-  background-color: #f9fbfd;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-header {
-  text-align: center;
-  padding: 20px;
-  padding-top: 0px;
-  color: hsl(206, 17%, 28%);
-}
-
-.card {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
-  border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
-  font-size: 18px;
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 30px 40px;
-  margin-top: 20px;
-  padding: 20px;
-  width: 450px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
   
-}
-
-.card-body {
-  min-height: 100px;
-}
-
-.card-footer {
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.btn {
-  border: none;
-  background-color: hsl(360, 91%, 36%);
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
-  display: inline-block;
-  font-size: 22px;
-  line-height: 22px;
-  margin: 16px 16px 16px 20px;
-  padding: 14px 34px;
-  text-align: center;
-  cursor: pointer;
-}
-
-.btn2 {
-  border: none;
-  background-color: hsl(0, 0%, 0%);
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
-  display: inline-block;
-  font-size: 22px;
-  line-height: 22px;
-  margin: 16px 16px 16px 20px;
-  padding: 14px 34px;
-  text-align: center;
-  cursor: pointer;
-}
-
-.float-right {
-  float: right;
-}
-
-#password {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  display: block;
-  width: 100%;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 85px;
-  font-size: 1.2rem;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
-  border-radius: 6px;
-  resize: none;
-  overflow: hidden;
-}
-
-@media (max-width: 500px) {
-  .btn {
-    font-size: 1rem;
-    margin: 16px 0px 0px 0px;
-    padding: 10px 15px;
-    flex: 1;
-    margin: 0 5px;
+  #high-scores-box {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    padding: 10px;
+    background-color: #f2f2f2;
+  }
+  
+  #quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #question-container {
+    text-align: center;
+    margin-bottom: 20px;
   }
 
-  .btn2 {
-      font-size: 1rem;
-      margin: 16px 0px 0px 0px;
-      padding: 10px 15px;
-      flex: 1;
-      margin: 0 5px;
-    }
-  
-
-  #password {
-    font-size: 1rem;
+#choices-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
   }
-}
+
+  
+  .choice {
+    margin: 10px;
+  }
+  
+  #result {
+    text-align: center;
+    display: none;
+  }
+  
+  #score-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #f2f2f2;
+  }
+  
+  #quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #timer-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #f2f2f2;
+  }
+  
+  .choice.correct {
+    background-color: green;
+  }
+  
+  .choice.incorrect {
+    background-color: red;
+  }
+  
+  #high-scores {
+    display: none;
+  }
+  
+  /* Rest of the CSS code */
+  
