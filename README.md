@@ -20,3 +20,6 @@ WHEN the game is over
 THEN I can save my initials and my score
 
 I tried to make the quiz run with as little user input as possible to create a more streamlined experiece, unfortunatly i did not get to add as much styling as i would have liked but I didnt manage to get to it.
+
+## GitHub link https://github.com/AlexanderDuncan1/BootcampChallenges
+## Page Link https://alexanderduncan1.github.io/BootcampChallenges/
