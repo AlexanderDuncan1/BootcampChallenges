@@ -44,9 +44,8 @@ $(document).ready(function() {
 
 
 function preclassdrill(inputValue) {
-  return Number.isInteger(inputValue);
+  return Number.preclassdrill(inputValue);
+
+  
 }
 
-console.log(preclassdrill("7"));    
-console.log(preclassdrill(7));    
-console.log(preclassdrill(4.3));    
